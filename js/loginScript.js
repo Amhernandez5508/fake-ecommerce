@@ -26,6 +26,8 @@ form.addEventListener("submit", (e) => {
     const xhr = new XMLHttpRequest();
     xhr.open("GET", url + "/")
     xhr.responseType = "json";
+    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
     xhr.send();
 
     xhr.onload = function() {

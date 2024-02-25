@@ -4,6 +4,8 @@ const urlAPI = "https://fake-ecommerce-back.onrender.com/api/v1/products"
 const xhr = new XMLHttpRequest();
 xhr.open("GET", urlAPI + "/");
 xhr.responseType = "json";
+xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
 xhr.send();
 
 xhr.onload = function() {
