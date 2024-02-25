@@ -1,5 +1,5 @@
 const table = document.querySelector("#userTable");
-const url = "https://fake-ecommerce-back.onrender.com/api/v1/users/";
+const url = "https://fake-ecommerce-back.onrender.com/api/v1/users";
 
 const xhr = new XMLHttpRequest();
 xhr.open("GET", url + "/");
