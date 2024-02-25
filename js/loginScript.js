@@ -9,7 +9,7 @@ const allInputs = document.querySelectorAll("form div input");
 */
 
 let sendedUser, sendedPassword;
-const url = "http://localhost:8080/api/v1/users";
+const url = "https://fake-ecommerce-back.onrender.com/api/v1/users/";
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();

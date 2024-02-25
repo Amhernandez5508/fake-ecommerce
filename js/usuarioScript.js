@@ -1,5 +1,5 @@
 const productsContentDiv = document.querySelector("#productsContentDiv");
-const urlAPI = "http://localhost:8080/api/v1/products"
+const urlAPI = "https://fake-ecommerce-back.onrender.com/api/v1/products/"
 
 const xhr = new XMLHttpRequest();
 xhr.open("GET", urlAPI + "/");
